@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Deep Learning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="DL.ico">
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand st_head" href="index.html">Devansh Kumar Gupta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pro_me">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </section>
+
+    <section id="about">
+      <div class="ml_div">
+        <h1 class="ab_h">Machine Learning</h1>
+        <p class="ab_p">A subset of artificial intelligence (AI), machine learning (ML) is the area of computational
+           science that focuses on analyzing and interpreting patterns and structures in data to enable learning,
+           reasoning, and decision making outside of human interaction. Simply put, machine learning allows the
+            user to feed a computer algorithm an immense amount of data and have the computer analyze and make
+            data-driven recommendations and decisions based on only the input data. ML refers to an AI system that
+             can self-learn based on the algorithm. Systems that get smarter and smarter over time without human
+             intervention is ML. Deep Learning (DL) is a machine learning (ML) applied to large data sets. Most AI
+              work involves ML because intelligent behaviour requires considerable knowledge.
+           Deep Learning is basically mimicking the human brain, it can also be defined as a multi neural network architecture
+            containing a large number of parameters and layers</p>
+              <hr>
+      </div>
+    </section>
+
+    <section id="pro_me" >
+       <h2 class="pro_h2">Projects</h2>
+      <div class="even_div">
+        <img class="even_img" src="images/mask_det.png" alt="">
+        <h4>Face Mask Detection</h4>
+        <p>
+            Build Sequential CNN model with various layers such as Conv2D, MaxPooling2D, Flatten, Dropout and Dense.
+            Fit images in the training set and the test set to our Sequential model we built using keras library.
+            After building the model,label two probabilities for our results.
+          We intend to use it to detect if we are wearing a face mask using our PC’s webcam. For this, first, we need to implement face detection.
+          In this, I am using the Haar Feature-based Cascade Classifiers for detecting the features of the face.
+        In the last step, we use the OpenCV library to run an infinite loop to use our web camera in which we detect the face using the Cascade Classifier.</p>
+      </div>
+      <div class="even_div">
+        <img class="odd_img" src="images/sent_any.jpg" alt="">
+        <h4>Sentiment Analysis</h4>
+        <p>Import the data and process the data to to make it usable for training for this we use tokenizer
+         fit and text to Sequence function and we also convert the comment sentiment  to its dummy values. As our data set is not balance so we use
+        resample to balance our dataset and then we  split the data in train and test. We create a Sequential model with certain
+        layers first layer is embedding layer, then Lstm, Dense layer and int last we used softmax function and then compile the model using  categorical crossentrophy
+        as loss function. Then we fit the model to our dataset and train our model. After training our model can predict the sentiment of out
+      comment using the model.  </p>
+      </div>
+
+      <div class="even_div">
+        <img class="even_img" src="images/blood_class.jpeg" alt="">
+        <h4>Blood Cell Analysis</h4>
+        <p>Import and Analyse the data and as our dataset is already divided into test set and train set and validation set we store the path for every set.
+        We use Image Data Generator to produce different manupulations of orignal data such as roated, shifted, scaled, zoomed, fliped and more.
+        Image_gen.flow_from_directory is used to fit out Image_gen to train,test and validation data set.
+        Using tensorflow keras models we build a Sequential model with certain layers Conv2D, MaxPooling2D,relu as Activation layer we use sigmoid as last layer
+      And compile our model with binary crossentrophy as loss function.After training our model with help of fit_generator, test it against our test set and check for efficiency.   </p>
+      </div>
+
+      <div class="even_div">
+        <img class="odd_img" src="images/stock.png" alt="">
+        <h4>Stock Price Prediction</h4>
+        <p>Import data from Quandl and only store relevent data for our training and then check the data
+           for null values and visualize the data to check for
+          With the help of processing,scale we tranform the train data.
+          Then split the data into train and test data using cross_validation.train_test_split.
+             From sklearn.linear_model we import LinearRegression and define out classifier as LinearRegression.
+          and use classifier.fit(x) to train the classifier and Classifier.predict to predict for test data.
+          And use classifer.score to check the confidence of the model.</p>
+      </div>
+
+      <div class="even_div">
+        <img class="even_img" src="images/house.jpg" alt="">
+        <h4>House Sale Prediction</h4>
+        <p>Import data and check the data for null values and visualize the data to check for
+           unnecessary data remove if necessary.We then split the data into train and test data.
+         Then with the help of MinMax Scaler we fit and tranform the train data and fit it on
+        test data. We create a  Sequential Model with certain layers such as Dense layers with relu as
+        activation function ,Dropout Layers,then we compile the model with Mean_squared_error as loss function and adam optimizer.
+      Then we fit our model using training set and train the model. Then we test it against our test set and check out that our model is
+      is efficient or not using classifiaction report and confusion matrix.</p>
+      </div>
+
+      <div class="even_div">
+        <img class="odd_img" src="images/cancer.PNG" alt="">
+        <h4>Breast Cancer Prediction</h4>
+        <p>Import data and check the data for null values and visualize the data to check for
+           unnecessary data remove if necessary.We then split the data into train and test data.
+         Then with the help of MinMax Scaler we fit and tranform the train data and fit it on
+        test data. We create a  Sequential Model with certain layers such as Dense layers with relu as
+        activation function ,Dropout Layers,then we compile the model with binary crossentrophy as loss
+        function and adam optimizer also use early callbacks to prevent from overfitting the data.
+      Then we fit our model using training set and train the model. Then we test it against our test set and check out that our model is
+      is efficient or not using classifiaction report and confusion matrix.</p>
+          <div class="cnt_hr" style="padding-top:50px;" >
+            <hr>
+          </div>
+      </div>
+
+
+
+    </section>
+
+
+    <section id="contact">
+
+      <button type="button" class="btn "><a href="https://www.linkedin.com/in/devansh-gupta-b25a15191/">linkedin</a></button>
+        <button type="button" class="btn "><a href="https://join.skype.com/invite/fqrCxNBeEnqV">skype</a> </button>
+        <button type="button" class="btn "> <a href="mailto:devanshgaurav@gmail.com">email</a> </button>
+        <button type="button" class="btn "><a href="https://twitter.com/Devansh34437130?s=08">twitter</a></button>
+          <button type="button" class="btn "><a href="https://www.facebook.com/devansh.gupta.560">facebook</a></button>
+            <button type="button" class="btn"><a href="https://www.instagram.com/devanshgaurav/?hl=en">instagram</a></button>
+    </section>
+
+    <footer id="footer">
+      <p>© Devansh Kumar Gupta</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

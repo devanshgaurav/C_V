@@ -1,0 +1,148 @@
+/*html {
+  background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #cbaf87 50%, #e7dec8 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}*/
+body{
+/*background-color: #e7dec8;*/
+/*background-color: #fadcac;*/
+}
+
+#heading{
+  text-align:center;
+ background-size: auto;
+ height: inherit;
+  padding: 200px;
+background-color: #fadcac;
+/*background-color: #cbf1f5;*/
+  }
+
+  #about{
+    padding: 100px 100px 50px 100px;
+    text-align: left;
+      background-color: #fadcac;
+      /*background-color: #e3fdfd;*/
+  }
+
+  #projects{
+    padding: 10px 100px 50px 100px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    background-color: #fadcac;
+    /*background-color: #e3fdfd;*/
+  }
+
+  #contact{
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #382933;
+      /*background-color: #e3fdfd;*/
+  }
+
+  #footer{
+    text-align: center;
+    background-color: #382933;
+    color: #fff;
+  }
+
+  .st_head{
+      font-family: 'Permanent Marker', cursive;
+  }
+
+  .bton{
+    border-radius: 25px;
+  }
+
+
+.ab_div{
+    padding: 10% 15%;
+}
+
+.ab_p{
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+  line-height: 1.5
+}
+.abt_div{
+  padding: 2px 15px 7px
+}
+
+.ab_h{
+  font-family: 'Permanent Marker', cursive;
+}
+.abt_img{
+  radius: 8px;
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.cl_p{
+    font-family: 'Courgette', cursive;
+  font-size: 20px;
+  line-height: 1.5
+}
+
+.ml_div{
+  padding: 2% 15%;
+}
+
+#pro_me{
+    /*background-color: #e3fdfd;*/
+    background-color: #fadcac;
+    text-align: left;
+      font-family: 'Courgette', cursive;
+}
+.pro_h2{
+  text-align: center;
+}
+.even_div{
+  padding: 4% 15%;
+}
+.even_img{
+  float: left;
+  radius: 8px;
+  width: 250px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.odd_img{
+  float: right;
+  radius: 8px;
+  width: 250px;
+  height: 150px;
+  margin-left: 30px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ border: 1px #ffa372;
+ border-radius: 100%;
+ background-color:#ffa372;
+}
+#education{
+  padding: 50px ;
+  text-align: left;
+/*  background-color: #e3fdfd;*/
+background-color: #fadcac;
+}
+#course{
+/*  background-color:  #e3fdfd;*/
+background-color: #fadcac;
+  text-align: center;
+}
+
+.cs_div{
+  padding: 4% 15% ;
+}
+
+.cs_btn{
+  border-radius: 25px;
+}
